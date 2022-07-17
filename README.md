@@ -1,4 +1,7 @@
-<h1>Professional Portfolio </h1>
+
+# Advanced_CSS_Professional_Portfolio
+
+<h3>Professional Portfolio </h3>
 <h4> Description </h4>
 For this challange, I have created portfolio web application using HTML and CSS. A portfolio of work can showcase my skills and talents to help me getting job. I have developed this application from scratch. 
 
@@ -8,31 +11,35 @@ For this challange, I have created portfolio web application using HTML and CSS.
 3. Usage
 4. Technology 
 5. Tools
-# Advanced_CSS_Professional_Portfolio
+
 #### 1. Requirement Fullfilled
-Included function navigation links at the top of the page.
-Included Resume link where I will add pdf file.
-Included recent photo of avatar.
-Divided site into 3 sections, including About Me, Work, Contact Me which represent skills and talents.
-Work Section, I have added few project links which I have created.
-Created layout responsive for multiple screen size including teablets and phone. For that, I have used flex box and media query.
-Applied hover effects to link and transition effects on images.
-Added Github repo link in Contact Me section.
+* Included function navigation links at the top of the page.
+* Included Resume link where I will add pdf file.
+* Included recent photo of avatar.
+* Divided site into 3 sections, including About Me, Work, Contact Me which represent skills and talents.
+* Work Section, I have added few project links which I have created.
+* Created layout responsive for multiple screen size including teablets and phone. For that, I have used flex box and media query.
+* Applied hover effects to link and transition effects on images.
+* Added Github repo link in Contact Me section.
 
 #### 2. How to Get There
 Here is link to deployed application.
 
 #### 3. Usage
 ##### Desktop Screen
-![Computer_size](https://user-images.githubusercontent.com/54869821/179379812-28a2dd65-af2f-4394-ae76-c85de763259f.png)
+This is landing page of Vaishali's portfolio. Desktop screen would look like below..
+<img src="https://user-images.githubusercontent.com/54869821/179381573-721154cb-4cb1-4050-803f-1cc1dfbce229.png"/>
 
 
 ##### Tablet Screen
-![tablet_size](https://user-images.githubusercontent.com/54869821/179379824-9037b1c5-3fd6-401f-815a-109d655ccc17.png)
+Tablet screen would look like below.
+<img src="https://user-images.githubusercontent.com/54869821/179381604-4ded67ca-a27c-45f3-b785-96e24c4b41ed.png" width="810px" height="1080px"/>
+
 
 
 ##### Mobile Screen
-![Phonesize](https://user-images.githubusercontent.com/54869821/179379827-08155630-bc3b-40d9-9815-7439a7130137.png)
+Mobile screen would look like below.<br/>
+<img src="https://user-images.githubusercontent.com/54869821/179381676-471fdaef-e454-4334-a525-f9839857574a.png" width="450px" height="847px"/>
 
 
 #### 4. Technology
@@ -46,6 +53,6 @@ Here is link to deployed application.
     <li> Visual Studio Code </li>
     <li> Git Bash (for code checkout in GitHub)</li>
 </ul>
-=======
+
 
 
