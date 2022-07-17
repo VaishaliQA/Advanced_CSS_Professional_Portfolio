@@ -23,7 +23,8 @@ For this challange, I have created portfolio web application using HTML and CSS.
 * Added Github repo link in Contact Me section.
 
 #### 2. How to Get There
-Here is link to deployed application.
+Here is link to deployed application. <br/>
+https://vaishaliqa.github.io/Advanced_CSS_Professional_Portfolio/
 
 #### 3. Usage
 ##### Desktop Screen
