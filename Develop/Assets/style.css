@@ -6,24 +6,23 @@
 }
 
 /* Global variable definations */
-:root
-{
-  --bgcolor : rgb(211, 211, 211);
-  --headerbgcolor:#333; 
+:root {
+  --bgcolor: rgb(211, 211, 211);
+  --headerbgcolor: #333;
   --headertxtcolor: white;
   --bordercolor: rgb(154, 141, 141);
+  --flex: flex;
 }
 
 /* Apply style to whole page */
-body{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
   background-color: var(--bgcolor);
- 
 }
 
 /* Apply style to header semantic tag */
 header {
-  display: flex;
+  display: var(--flex);
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +32,7 @@ header {
   background-color: var(--headerbgcolor);
   color: var(--headertxtcolor);
   position: sticky;
-  top:0;
+  top: 0;
   z-index: 10;
 }
 
@@ -45,14 +44,12 @@ h1 {
 
 /* Apply style to nav ul, a, hover and active link */
 header nav ul {
-
-display: flex;
-flex-wrap: wrap;
-justify-content: flex-end;
-align-items: center;
-list-style: none;
-padding-right: 0px;
-
+  display: var(--flex);
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding-right: 0px;
 }
 
 header nav ul li {
@@ -62,7 +59,6 @@ header nav ul li {
   padding: 10px 15px;
   margin-top: 5px;
   margin-bottom: 10px;
-  
 }
 
 nav a {
@@ -78,69 +74,67 @@ nav a:hover {
 }
 
 nav a:active {
-  color:grey;
+  color: grey;
 }
 
 /* Apply Style to Hero section with background */
-.herocontainer{
-  
+.herocontainer {
   background-color: rgba(64, 169, 222, 0.904);
   position: relative;
   text-align: center;
-  color:var(--headertxtcolor);
-  width:100%;
-  height:250px;
+  color: var(--headertxtcolor);
+  width: 100%;
+  height: 250px;
   text-align: end;
   padding-right: 30px;
   background-attachment: fixed;
-  display: flex;
+  display: var(--flex);
   justify-content: flex-end;
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
 }
-.userimg{
-width: 150px;
-height: 150px;
-padding-left: 20px;
-padding-bottom: 20px;
-
+.userimg {
+  width: 150px;
+  height: 150px;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
-
 /* Apply bottom and right padding to subtitle class */
-.subtitle{
-padding-bottom: 15px;
-padding-right: 15px;
-}  
+.subtitle {
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
 
 /* Start style of about me and work article */
-.aboutmemaindiv, .workmaindiv { 
-  display: flex;
+.aboutmemaindiv,
+.workmaindiv {
+  display: var(--flex);
   flex-wrap: wrap;
   margin-top: 40px;
   justify-content: space-between;
   justify-content: center;
- 
 }
-.aboutmecontainer{
-  grid-template-rows: 1fr 1fr 1fr 1fr;/* 4 rows of equal size */
+.aboutmecontainer {
+  grid-template-rows: 1fr 1fr 1fr 1fr; /* 4 rows of equal size */
 }
 
-.aboutmecontainer, .workcontainer {
-  width: 100%; 
+.aboutmecontainer,
+.workcontainer {
+  width: 100%;
   display: grid; /* CSS Grid */
-  grid-template-columns: 1fr 2fr 2fr 2fr;  /* Create a 4 column and 1 is smaller then 3*/
+  grid-template-columns: 1fr 2fr 2fr 2fr; /* Create a 4 column and 1 is smaller then 3*/
   gap: 10px 10px; /* Gap on x and y grid */
 }
 
-.aboutmeitem.aboutmetitle { 
+.aboutmeitem.aboutmetitle {
   padding-top: 0px;
   font-size: 25px;
   grid-row: 1 / span 4;
   padding-right: 10px;
   text-align: right;
-  border-right: 2px solid var(--bordercolor); 
+  border-right: 2px solid var(--bordercolor);
 }
 .aboutmeitem.p1 {
   padding-left: 10px;
@@ -160,13 +154,11 @@ padding-right: 15px;
 
 /* Start style of work article */
 
-.workcontainer
-{
+.workcontainer {
   grid-template-rows: repeat(16, 1fr);
   overflow: hidden;
   /* overflow-wrap: anywhere; 
   text-overflow: clip; */
- 
 }
 
 .workitem.worktitle {
@@ -178,69 +170,68 @@ padding-right: 15px;
   border-right: 2px solid var(--bordercolor);
 }
 
-.spanlowertext { 
-  background-color: rgb(211,211,211);
+.spanlowertext {
+  background-color: rgb(211, 211, 211);
   position: relative;
   line-height: 1.5;
-  top:10px;
+  top: 10px;
   padding-left: 8px;
   padding-right: 8px;
   border-radius: 7%;
-  opacity: .8;
+  opacity: 0.8;
 }
 
-
 /* Grid cells with embedded 6 images */
-.project1 { 
+.project1 {
   grid-column: 2 / span 3; /* Specify column and row where image embed */
   grid-row: 1 / span 6;
   background-image: url("../Images/WorkImage/horiseon.png");
-  background-size: cover; 
-  display: flex; 
-  align-items: flex-end; 
+  background-size: cover;
+  display: var(--flex);
+  align-items: flex-end;
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
-  border: .25vw solid var(--bordercolor);
+  border: 0.25vw solid var(--bordercolor);
 }
 
-.project2 { 
+.project2 {
   grid-column: 2 / span 2;
   grid-row: 7 / span 6;
   background-image: url("../Images/WorkImage/project1.jpg");
-  background-size: cover; 
-  display: flex; /*Set flex */
-  align-items: flex-end; 
+  background-size: cover;
+  display: var(--flex); /*Set flex box*/
+  align-items: flex-end;
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
-  border: .25vw solid var(--bordercolor);
+  border: 0.25vw solid var(--bordercolor);
 }
 
 .project3 {
-  grid-column: 3 /span 1;
+  grid-column: 3 / span 1;
   grid-row: 13 / span 3;
   background-image: url("../Images/WorkImage/project2.png");
   background-size: cover;
-  display: flex; 
-  align-items: flex-end; 
+  display: var(--flex);
+  align-items: flex-end;
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
-  border: .25vw solid var(--bordercolor);
+  border: 0.25vw solid var(--bordercolor);
 }
 
 .project4 {
   grid-column: 2 / span 1;
-  grid-row: 13 / span 3; 
+  grid-row: 13 / span 3;
   background-image: url("../Images/WorkImage/project3.jpg");
   background-size: cover;
-  display: flex; 
-  align-items: flex-end; 
+  display: var(--flex);
+  align-items: flex-end;
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
-  border: .25vw solid var(--bordercolor);
+  border: 0.25vw solid var(--bordercolor);
 }
 
 .project5 {
@@ -248,12 +239,12 @@ padding-right: 15px;
   grid-row: 7 / span 3;
   background-image: url("../Images/WorkImage/project4.png");
   background-size: 300px 200px, cover;
-  display: flex; 
-  align-items: flex-end; 
+  display: var(--flex);
+  align-items: flex-end;
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
-  border: .25vw solid var(--bordercolor);
+  border: 0.25vw solid var(--bordercolor);
 }
 
 .project6 {
@@ -261,30 +252,30 @@ padding-right: 15px;
   grid-row: 10 / span 6;
   background-image: url("../Images/WorkImage/project5.png");
   background-size: cover;
-  display: flex; 
-  align-items: flex-end; 
+  display: var(--flex);
+  align-items: flex-end;
   padding-left: 0px;
   padding-bottom: 15px;
   text-align: left;
-  border: .25vw solid var(--bordercolor);
+  border: 0.25vw solid var(--bordercolor);
 }
 
 /* Set style of Contact Me Article */
 /* Flex container */
-.contactmemaindiv { 
-  display: flex;
+.contactmemaindiv {
+  display: var(--flex);
   flex-wrap: wrap;
   justify-content: space-between;
   justify-content: center;
-  margin-top: 40px; 
+  margin-top: 40px;
 }
 
-.contactmecontainer { 
+.contactmecontainer {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr repeat(3, 2fr); /* Create a 4X4 grid with the first column smaller than the others 3 */
-  grid-template-rows: repeat(3,2fr); /* 3 rows of slighty biger size */
-  gap: 10px 10px; /* Set x and y gap */  
+  grid-template-rows: repeat(3, 2fr); /* 3 rows of slighty biger size */
+  gap: 10px 10px; /* Set x and y gap */
 }
 
 .contactmeitem {
@@ -305,65 +296,72 @@ padding-right: 15px;
   grid-column: 2 / span 3;
   grid-row: 1 / span 2;
 }
-.contactmeitem.phone{
-  grid-row: 2 ;
+.contactmeitem.phone {
+  grid-row: 2;
   padding-left: 10px;
-  grid-column: 2 ;   
+  grid-column: 2;
 }
 
-.contactmeitem.email{
-  grid-row: 2 ;
+.contactmeitem.email {
+  grid-row: 2;
   padding-left: 10px;
-  grid-column: 3 ;  
+  grid-column: 3;
 }
 
-.contactmeitem.git-hub{
-  grid-row: 2 ;
+.contactmeitem.git-hub {
+  grid-row: 2;
   padding-left: 10px;
-  grid-column: 4 ;
+  grid-column: 4;
 }
 
-.workcontainer .project1:hover, .workcontainer .project2:hover, .workcontainer .project3:hover,.workcontainer .project4:hover,
-.workcontainer .project5:hover, .workcontainer .project6:hover{
-  transform: scale(1.0);
+.workcontainer .project1:hover,
+.workcontainer .project2:hover,
+.workcontainer .project3:hover,
+.workcontainer .project4:hover,
+.workcontainer .project5:hover,
+.workcontainer .project6:hover {
+  transform: scale(1);
   box-shadow: 0 0 10px;
   opacity: 0.7;
 }
 
-
-
-  /* It will be applied on any screen smaller than 575px */
-@media screen and  (max-width: 575px) {
-
-  .subtitle{
+/* It will be applied on any screen smaller than 575px */
+@media screen and (max-width: 575px) {
+  .subtitle {
     font-size: 3.5vw;
   }
-  .herocontainer{
+  .herocontainer {
     height: 100px;
   }
-  .project1, .project2, .project3, .project4, .project5, .project6{
+  .project1,
+  .project2,
+  .project3,
+  .project4,
+  .project5,
+  .project6 {
     overflow-wrap: anywhere;
   }
-  .spanlowertext, .lowertext {
-    font-size:  3vw;
+  .spanlowertext,
+  .lowertext {
+    font-size: 3vw;
   }
 
   .workitem.worktitle {
-    
     padding-right: 23px;
-  
-   }
-   .aboutmemaindiv, .workmaindiv, .contactmemaindiv{
-    margin-top: 25px
+  }
+  .aboutmemaindiv,
+  .workmaindiv,
+  .contactmemaindiv {
+    margin-top: 25px;
   }
 
-   .userimg{
+  .userimg {
     width: 70px;
     height: 70px;
   }
-   .aboutmeitem.aboutmetitle{
+  .aboutmeitem.aboutmetitle {
     padding-right: 21px;
-   }
+  }
   header a {
     font-size: 3.8vw;
   }
@@ -372,22 +370,22 @@ padding-right: 15px;
     padding-right: 0px;
     justify-content: center;
   }
-  
+
   header nav ul li {
     padding: 3px 3px 3px 3px;
   }
-  h1{
+  h1 {
     font-size: 5vw;
   }
-  p{
-    font-size:3vw;
+  p {
+    font-size: 3vw;
   }
 
   footer a {
     font-size: 3vw;
   }
 
-  .contactmecontainer a:hover{
+  .contactmecontainer a:hover {
     font-size: 3.5vw;
   }
 
@@ -395,45 +393,36 @@ padding-right: 15px;
     gap: 0px 0px;
   }
 
-  .contactmeitem git-hub{ 
+  .contactmeitem git-hub {
     padding-left: 30px;
   }
 }
 
 /* It will be applied on min screen 576px and bigger  than 980px */
-@media screen and (min-width: 576px) and  (max-width: 980px) {
-  
-  .userimg{
+@media screen and (min-width: 576px) and (max-width: 980px) {
+  .userimg {
     width: 110px;
     height: 110px;
   }
-  
-  .herocontainer{
+
+  .herocontainer {
     height: 150px;
   }
-  
+
   .workitem.worktitle {
-  
-     padding-right: 43px;
-    
-     
-   }
-   .aboutmeitem.aboutmetitle{
-     padding-right: 33px;
-   }
-  
- }
+    padding-right: 43px;
+  }
+  .aboutmeitem.aboutmetitle {
+    padding-right: 33px;
+  }
+}
 
 /* It will be applied on min screen 981 and max 1150px */
-@media screen and  (min-width: 981px) and (max-width: 1150px) {
-  
-.workitem.worktitle {
-  
-  padding-right: 43px;
-
-   
- }
- .aboutmeitem.aboutmetitle{
-  padding-right: 33px;
- }
+@media screen and (min-width: 981px) and (max-width: 1150px) {
+  .workitem.worktitle {
+    padding-right: 43px;
+  }
+  .aboutmeitem.aboutmetitle {
+    padding-right: 33px;
+  }
 }

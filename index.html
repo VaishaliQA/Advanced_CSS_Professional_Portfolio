@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protfolio</title>
+    <!-- Import css stylesheet -->
+    <link rel="stylesheet" href="./Develop/Assets/reset.css" />
+    <link rel="stylesheet" href="./Develop/Assets/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Protfolio</title> 
-  <!-- Import css stylesheet -->
-  <link rel="stylesheet" href="./Develop/Assets/reset.css" />
-  <link rel="stylesheet" href="./Develop/Assets/style.css" />
-</head>
-
-<body>
-  <header>
-    <h1>Vaishali Patel</h1>
-    <!-- Added navigation links -->
+  <body>
+    <header>
+      <h1>Vaishali Patel</h1>
+      <!-- Added navigation links -->
       <nav>
         <ul>
           <li><a href="#aboutme">About&nbsp;Me</a></li>
@@ -22,116 +21,153 @@
           <li><a href="#" onclick="resumeAlertMsg()">Resume</a></li>
         </ul>
       </nav>
-      
-  </header>
-  <!-- Hero Image -->
-  <div class="herocontainer">
-    <img src="./Develop/Images/User/avatar.jpg" class="userimg" alt="An image of Vaishali">
-    <span class="subtitle">Ready, Set, Code!!!</span>
-  </div>
-  <main>
-    <!--About Me article-->
-    <article>
-        <div id="aboutme" class="aboutmemaindiv"> 
-            <div class="aboutmecontainer"> 
-                <div class="aboutmeitem aboutmetitle"> 
-                    <p> About Me </p>
-                </div>
-                <div class="aboutmeitem p1">
-                    <p> Overall 4+ Years of professional experience in Automation testing which includes the web testing,
-                        Mobile testing and API testing. Hands on experience in development and execution of Test Plan, Test Scenarios and Test Cases.
-                        I possess Master of Computer Science with excellent programming and
-                        development skills. Outstanding technical skill able to quickly learn new concept.</p>
-                </div>
-                <div class="aboutmeitem p2">
-                    <p>Currently, I am doing full flex coding bootcamp in Georgia Tech unversity to enhance my professional skill. Meantime, I am improving problem solving skill by solving leetcode problem online.</p>
-                </div>  
-            </div>
-        </div> 
-    </article>
-    <!--Work article-->
-    <article>
-        <div id="work" class="workmaindiv"> 
-            
-            <div class="workcontainer">
-                <div class="workitem worktitle"> 
-                    <p> Work </p>
-                </div>
-             
-                <!-- Embeded 6 images with 6  github projects links -->
-                <!-- Added Project 1 -->
-                <div class="project1" onclick="window.open('https://vaishaliqa.github.io/horiseoncoderefactorchallenge/');" style="cursor:hand;" alt="Horiseon Services page Image">
-                    <!-- Span added to contain h3, lower text and wrapped background -->
-                    <span class="spanlowertext"> 
-                        <h3>Horiseon Services</h3>
-                        <!-- A small class to apply for all project image lower text -->
-                        <span class="lowertext">HTML/CSS</span> 
-                    </span>
-                </div>
-                 <!-- Added Project 2 -->
-                <div class="project2" onclick="projectAlertMsg()" style="cursor:hand;" alt="Project page Image">
-                    <span class="spanlowertext"> 
-                        <h3>Coming Soon</h3>  
-                        <span class="lowertext">HTML/CSS/JS</span> 
-                    </span>
-                </div>
-                 <!-- Added Project 3 -->
-                <div class="project3" onclick="projectAlertMsg()" style="cursor:hand;" alt="Project page Image">
-                    <span class="spanlowertext"> 
-                        <h3>Coming Soon</h3>
-                        <span class="lowertext">HTML/CSS</span> 
-                    </span>
-                </div>
-                 <!-- Added Project 4 -->
-                <div class="project4" onclick="projectAlertMsg()" style="cursor:hand;" alt="Project page Image">
-                    <span class="spanlowertext"> 
-                        <h3>Coming Soon</h3>
-                        <span class="lowertext">HTML/CSS</span> 
-                    </span>
-                </div>
-                 <!-- Added Project 5 -->
-                <div class="project5" onclick="projectAlertMsg()" style="cursor:hand;" alt="Project page Image">
-                    <span class="spanlowertext"> 
-                        <h3>Coming Soon</h3>
-                        <span class="lowertext">HTML/CSS</span> 
-                    </span>
-                </div>
-                 <!-- Added Project 6 -->
-                <div class="project6" onclick="projectAlertMsg()" style="cursor:hand;" alt="Project page Image">
-                    <span class="spanlowertext"> 
-                        <h3>Coming Soon</h3>
-                        <span class="lowertext">HTML/CSS</span> 
-                    </span>
-                </div>
-            </div>
-            </div>
-    </article>
-  </main>
-  <!-- Added Contact me in footer section -->
-  <footer>
-    <div id="contactme" class="contactmemaindiv"> 
-        <div class="contactmecontainer"> 
-            <div class="contactmeitem contactme"> 
-               <p>  Contact Me </p> 
-            </div>
-            <div class="contactmeitem phone">
-                <a href="tel:408-585-9110">408&#8209;585&#8209;9110</a>
-            </div>
-            <div class="contactmeitem email"> 
-                <a href="mailto:patelvaishali1890@gmail.com">patelvaishali1890@gmail.com</a>
-            </div>
-            <div class="contactmeitem git-hub"> 
-                <a href="https://github.com/VaishaliQA" target="_blank">GitHub</a>
-            </div>
-        </div>
+    </header>
+    <!-- Hero Image -->
+    <div class="herocontainer">
+      <img
+        src="./Develop/Images/User/avatar.jpg"
+        class="userimg"
+        alt="An image of User"/>
+      <span class="subtitle">Ready, Set, Code!!!</span>
     </div>
-  </footer>
-  <script>
-    function resumeAlertMsg() {
-            alert("Resume Coming Soon!!!");
-    }
-    function projectAlertMsg() {
-            alert("New Project Coming Soon!!!");
-    }
-  </script>
+    <main>
+      <!--About Me article-->
+      <article>
+        <div id="aboutme" class="aboutmemaindiv">
+          <div class="aboutmecontainer">
+            <div class="aboutmeitem aboutmetitle">
+              <p>About Me</p>
+            </div>
+            <div class="aboutmeitem p1">
+              <p>
+                Overall 4+ Years of professional experience in Automation
+                testing which includes the web testing, Mobile testing and API
+                testing. Hands on experience in development and execution of
+                Test Plan, Test Scenarios and Test Cases. I possess Master of
+                Computer Science with excellent programming and development
+                skills. Outstanding technical skill able to quickly learn new
+                concept.
+              </p>
+            </div>
+            <div class="aboutmeitem p2">
+              <p>
+                Currently, I am doing full flex coding bootcamp in Georgia Tech
+                unversity to enhance my professional skill. Meantime, I am
+                improving problem solving skill by solving leetcode problem
+                online.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!--Work article-->
+      <article>
+        <div id="work" class="workmaindiv">
+          <div class="workcontainer">
+            <div class="workitem worktitle">
+              <p>Work</p>
+            </div>
+
+            <!-- Embeded 6 images with 6  github projects links -->
+            <!-- Added Project 1 -->
+            <div
+              class="project1"
+              onclick="window.open('https://vaishaliqa.github.io/horiseoncoderefactorchallenge/');"
+              style="cursor: hand"
+              alt="Horiseon Services page Image">
+              <!-- Span added to contain h3, lower text and wrapped background -->
+              <span class="spanlowertext">
+                <h3>Horiseon Services</h3>
+                <!-- A small class to apply for all project image lower text -->
+                <span class="lowertext">HTML/CSS</span>
+              </span>
+            </div>
+            <!-- Added Project 2 -->
+            <div
+              class="project2"
+              onclick="projectAlertMsg()"
+              style="cursor: hand"
+              alt="Project page Image">
+              <span class="spanlowertext">
+                <h3>Coming Soon</h3>
+                <span class="lowertext">HTML/CSS/JS</span>
+              </span>
+            </div>
+            <!-- Added Project 3 -->
+            <div
+              class="project3"
+              onclick="projectAlertMsg()"
+              style="cursor: hand"
+              alt="Project page Image">
+              <span class="spanlowertext">
+                <h3>Coming Soon</h3>
+                <span class="lowertext">HTML/CSS</span>
+              </span>
+            </div>
+            <!-- Added Project 4 -->
+            <div
+              class="project4"
+              onclick="projectAlertMsg()"
+              style="cursor: hand"
+              alt="Project page Image">
+              <span class="spanlowertext">
+                <h3>Coming Soon</h3>
+                <span class="lowertext">HTML/CSS</span>
+              </span>
+            </div>
+            <!-- Added Project 5 -->
+            <div
+              class="project5"
+              onclick="projectAlertMsg()"
+              style="cursor: hand"
+              alt="Project page Image">
+              <span class="spanlowertext">
+                <h3>Coming Soon</h3>
+                <span class="lowertext">HTML/CSS</span>
+              </span>
+            </div>
+            <!-- Added Project 6 -->
+            <div
+              class="project6"
+              onclick="projectAlertMsg()"
+              style="cursor: hand"
+              alt="Project page Image">
+              <span class="spanlowertext">
+                <h3>Coming Soon</h3>
+                <span class="lowertext">HTML/CSS</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <!-- Added Contact me in footer section -->
+    <footer>
+      <div id="contactme" class="contactmemaindiv">
+        <div class="contactmecontainer">
+          <div class="contactmeitem contactme">
+            <p>Contact Me</p>
+          </div>
+          <div class="contactmeitem phone">
+            <a href="tel:408-585-9110">408&#8209;585&#8209;9110</a>
+          </div>
+          <div class="contactmeitem email">
+            <a href="mailto:patelvaishali1890@gmail.com">patelvaishali1890@gmail.com</a>
+          </div>
+          <div class="contactmeitem git-hub">
+            <a href="https://github.com/VaishaliQA" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Javascript code for dialog box -->
+    <script>
+      function resumeAlertMsg() {
+        alert("Resume Coming Soon!!!");
+      }
+      function projectAlertMsg() {
+        alert("New Project Coming Soon!!!");
+      }
+    </script>
   </body>
+</html>
